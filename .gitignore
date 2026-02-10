@@ -1,0 +1,26 @@
+# --- Unity Specific Ignores ---
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Ll]ogs/
+*.csproj
+*.sln
+
+# --- CAVE2 Template Isolation ---
+# Ignore everything by default
+/*
+
+# Allow the Assets folder itself
+!/Assets/
+
+# Ignore everything INSIDE Assets by default (The Template)
+/Assets/*
+
+# Allow our specific folder AND its contents
+!/Assets/ProjectAssets/
+!/Assets/ProjectAssets/**
+
+# Allow the config files
+!/.gitignore
+!/README.md
